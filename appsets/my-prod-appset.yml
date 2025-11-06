@@ -8,12 +8,12 @@ spec:
   goTemplateOptions: ["missingkey=error"]
   generators:
   - git:
-      repoURL: https://github.com/kostis-codefresh/many-appsets-demo.git
+      repoURL: https://github.com/mv11l/many-appsets-demo.git
       revision: HEAD
       directories:
       - path: apps/*/envs/prod-us
-      - path: apps/*/envs/prod-eu      
-  template:      
+      - path: apps/*/envs/prod-eu
+  template:
     metadata:
       name: '{{index .path.segments 1}}-{{index .path.segments 3}}' 
     spec:
@@ -22,7 +22,7 @@ spec:
 
       # Source of the application manifests
       source:
-        repoURL: https://github.com/kostis-codefresh/many-appsets-demo.git
+        repoURL: https://github.com/mv11l/many-appsets-demo.git
         targetRevision: HEAD
         path: '{{.path.path}}'
       

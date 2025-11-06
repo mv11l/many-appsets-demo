@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/kostis-codefresh/many-appsets-demo.git
+    repoURL: https://github.com/mv11l/many-appsets-demo.git
     targetRevision: HEAD
     path: appsets
   destination:
